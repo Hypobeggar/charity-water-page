@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity: water</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header img {
+      height: 30px;
+    }
+    header .cta-btn {
+      background: #fdd835;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #000;
+    }
+
+    /* Hero section */
+    .hero {
+      position: relative;
+      background: url('https://images.unsplash.com/photo-1519681393784-d120267933ba') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: #fff;
+    }
+    .hero-content {
+      background: rgba(0,0,0,0.5);
+      padding: 40px;
+      max-width: 500px;
+      margin-left: 60px;
+      border-radius: 8px;
+    }
+    .hero h1 {
+      font-size: 2.2rem;
+      margin: 0 0 15px;
+    }
+    .hero p {
+      margin-bottom: 20px;
+    }
+    .hero .btn {
+      background: #fdd835;
+      color: #000;
+      text-decoration: none;
+      padding: 12px 25px;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    /* Donation section */
+    .donation {
+      background: #fff7e6;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .donation h2 {
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+    .donation-box {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      display: inline-block;
+      padding: 30px 40px;
+      max-width: 400px;
+    }
+    .donation-options {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .donation-options button {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #f9f9f9;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .donation-options button.active {
+      background: #fdd835;
+      border-color: #fdd835;
+    }
+    .donation .btn {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      background: #fdd835;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .donation small {
+      display: block;
+      margin-top: 15px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    /* Image section */
+    .impact {
+      background: #111;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .impact img {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Charity_Water_logo.svg/2560px-Charity_Water_logo.svg.png" alt="Charity: water">
+    <a href="#donate" class="cta-btn">GIVE TODAY</a>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Turn every dollar into clean water</h1>
+      <p>100% of your donation goes straight to local projects, bringing safe water to communities around the world.</p>
+      <a href="#donate" class="btn">Donate to Water</a>
+    </div>
+  </section>
+
+  <!-- Donation Section -->
+  <section class="donation" id="donate">
+    <h2>Ready to take Action?</h2>
+    <div class="donation-box">
+      <div class="donation-options">
+        <button>$50</button>
+        <button class="active">$100</button>
+        <button>$150</button>
+        <button>$200</button>
+        <button>Other</button>
+      </div>
+      <button class="btn">GIVE</button>
+      <small>It only takes $40 to bring 1 person reliable access to the clean water they deserve.</small>
+    </div>
+  </section>
+
+  <!-- Impact Section -->
+  <section class="impact">
+    <img src="https://images.unsplash.com/photo-1606925797303-5d6ec9fef1d0" alt="Happy people with water">
+  </section>
+
+</body>
+</html>
