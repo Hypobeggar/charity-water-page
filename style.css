@@ -32,7 +32,7 @@ body {
     /* Hero section */
     .hero {
       position: relative;
-      background: url('https://images.unsplash.com/photo-1519681393784-d120267933ba') no-repeat center center/cover;
+      background: url('/imgs/hero.png') no-repeat center center/cover;
       height: 80vh;
       display: flex;
       align-items: center;
