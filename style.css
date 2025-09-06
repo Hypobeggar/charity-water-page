@@ -19,7 +19,7 @@ body {
       z-index: 10;
     }
     header img {
-      height: 50px;
+      width: 30vw;
     }
     header .cta-btn {
       background: #fdd835;
@@ -28,6 +28,7 @@ body {
       text-decoration: none;
       font-weight: bold;
       color: #000;
+
     }
 
     /* Hero section */
@@ -81,12 +82,14 @@ body {
       display: inline-block;
       height: 30vh;
       padding: 30px 40px;
-      max-width: 400px;
+      width: 40vw;
+      max-width: 40vw;
     }
     .donation-options {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
+      width: 100%;
       margin-bottom: 20px;
     }
     .donation-options button {
@@ -135,16 +138,33 @@ body {
     }
 
     @media (max-width: 768px) {
-.hero-content {
-  position: absolute;
-  bottom: 0;                  /* stick to bottom */
-  left: 50%;                  /* start at center */
-  transform: translateX(-50%);/* perfect horizontal centering */
-  max-width: clamp(250px, 100%, 600px);
-  padding: 1.5rem;
-  text-align: center;
-  border-radius: 8px;
-  margin: 0;
-}
-
+    .hero-content {
+      position: absolute;
+      bottom: 0;                  /* stick to bottom */
+      left: 50%;                  /* start at center */
+      transform: translateX(-50%);/* perfect horizontal centering */
+      max-width: clamp(250px, 100%, 600px);
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 8px;
+      margin: 0;
+    }
+    .donation-options button {
+      width:12vw;
+      font-size: 2vw;
+    }
+    header .cta-btn {
+          width: 10vw;
+          font-size: 2vw;
+    }
+    .hero h1 {
+        font-size: 4vw;
+    }
+    .hero p {
+        font-size: 2.5vw;
+    }
+    .hero .btn {
+      font-size: 2.5vw;
+      padding: 1vw 2.5vw;
+    }
   }
