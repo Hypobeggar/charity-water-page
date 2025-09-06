@@ -1,6 +1,6 @@
 body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'proxima-nova', sans-serif;
       line-height: 1.5;
       color: #333;
     }
@@ -40,9 +40,8 @@ body {
       color: #fff;
     }
     .hero-content {
-      background: rgba(0,0,0,0.5);
       padding: 40px;
-      max-width: 500px;
+      max-width: 30vw;
       margin-left: 60px;
       border-radius: 8px;
     }
@@ -93,6 +92,9 @@ body {
       background: #f9f9f9;
       cursor: pointer;
       font-weight: bold;
+    }
+    #other{
+      grid-column:span 2;
     }
     .donation-options button.active {
       background: #fdd835;
